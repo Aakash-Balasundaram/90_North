@@ -20,6 +20,7 @@ export default function Home() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  
   return (
     <div className={`min-h-screen flex flex-col ${scaleClass}`}>
       {/* Fixed Navbar */}
