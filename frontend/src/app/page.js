@@ -23,6 +23,7 @@ export default function Home() {
   return (
     <div className={`min-h-screen flex flex-col ${scaleClass}`}>
       {/* Fixed Navbar */}
+
       <nav className="fixed w-full top-0 left-0 right-0 bg-blue-600 text-white z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
@@ -47,6 +48,10 @@ export default function Home() {
       </nav>
 
       {/* Main Content Area */}
+
+      {/* The content in the Left Menu, Main Content, and Right Panel is purely for illustrative purposes 
+      to fill the respective areas and is not interconnected. */}
+
       <div className="flex flex-1 pt-16">
         {/* Left Menu */}
         <aside className={`${
@@ -63,7 +68,9 @@ export default function Home() {
           </div>
         </aside>
 
+
         {/* Main Content */}
+
         <main className="flex-1 min-w-0">
           <div className="container mx-auto p-6">
             <div className="bg-white rounded-lg shadow-sm p-6">
@@ -93,19 +100,21 @@ export default function Home() {
           </div>
         </main>
 
+
         {/* Right Panel */}
+
         <aside className="hidden xl:block w-64 bg-gray-50 border-l p-4">
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-4 shadow-sm">
-              <h3 className="font-semibold mb-2 text-center sm:text-left">Statistics</h3>
+              <h3 className="font-semibold mb-2 text-center sm:text-left text-gray-700 text-[20px]">Statistics</h3>
               <div className="space-y-2">
                 <div>
-                  <span className="text-sm text-gray-600">Visitors</span>
-                  <span className="block text-lg font-semibold">1,234</span>
+                  <span className="text-lg text-gray-600">Visitors</span>
+                  <span className="block text-[17px] font-semibold text-gray-700">1,234</span>
                 </div>
                 <div>
-                  <span className="text-sm text-gray-600">Revenue</span>
-                  <span className="block text-lg font-semibold">$5,678</span>
+                  <span className="text-lg text-gray-600">Revenue</span>
+                  <span className="block text-[17px] font-semibold text-gray-700">$5,678</span>
                 </div>
               </div>
             </div>
@@ -130,7 +139,9 @@ export default function Home() {
         </aside>
       </div>
 
+
       {/* Footer */}
+      
       <footer className="bg-gray-800 text-white mt-auto">
         <div className="container mx-auto px-4 py-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm sm:text-base">
